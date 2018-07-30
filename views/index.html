@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+    <script src="/public/js/jquery-1.12.4.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</head>
+<body>
+	<button id="btn">请求数据</button>
+	<ul id="show" style="min-height: 100px; min-width: 100px; background: pink"></ul>
+</body>
+</html>
+<script>
+	$('#btn').on('click', function() {
+        //通过ajax提交请求
+        $.ajax({
+            type: 'post',
+            url: '/api/searchMessages',
+            data: {total: 3},
+            dataType: 'json',
+            success: function(result) {
+                var $show = $('#show');
+                var list  = result['var'];
+                var HTML  = '';
+            	for (var i = 0, len = list.length; i < len; i++) {
+            		HTML += '<li>' + list[i].fid + '</li>' 
+            	}
+            	$show.html(HTML)
+            	console.log(list)
+            }
+        })
+    })
+</script>

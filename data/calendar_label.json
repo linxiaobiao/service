@@ -1,0 +1,49 @@
+{
+    "code": "S_OK",
+    "summary": "",
+    "var": {
+        "count": 20,
+        "table": [
+            {
+                "seqNo": 1483390,
+                "title": "天赋异人 S02E04",
+                "content|1": ["", "测试内容"],
+                "site": "",
+                "startDate": "2017-07-20",
+                "endDate": "2017-07-20",
+                "startTime": 1100,
+                "startTimeDesc": "11:00",
+                "endTime": 1100,
+                "dateDescript": "2017年07月20日11:00",
+                "calendarType": 10,
+                "sendInterval": 0,
+                "createTime": "",
+                "modifyTime": "2017-06-29 13:57:03",
+                "calendarUrl": "",
+                "imgUrl": "",
+                "calendarUrlWeb": "",
+                "calendarUrlWap": ""
+            },
+            {
+                "seqNo": 1483391,
+                "title": "年轻一代 S04E04",
+                "content|1": ["", "测试内容2222222"],
+                "site": "",
+                "startDate": "2017-07-20",
+                "endDate": "2017-07-20",
+                "startTime": 1100,
+                "startTimeDesc": "11:00",
+                "endTime": 1100,
+                "dateDescript": "2017年07月20日11:00",
+                "calendarType": 10,
+                "sendInterval": 0,
+                "createTime": "",
+                "modifyTime": "2017-06-29 13:57:03",
+                "calendarUrl": "",
+                "imgUrl": "",
+                "calendarUrlWeb": "",
+                "calendarUrlWap": ""
+            }
+        ]
+    }
+}
