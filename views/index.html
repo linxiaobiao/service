@@ -5,30 +5,30 @@
 	<title>首页</title>
     <script src="/public/js/jquery-1.12.4.min.js"></script>
     <script src="/public/js/index.js"></script>
+    <style>
+        .title {
+            margin: 100px 0;
+            text-align: center;
+            color: green;
+        }
+    </style>
 </head>
 <body>
-	<button id="btn">请求数据</button>
-	<ul id="show" style="min-height: 100px; min-width: 100px; background: pink"></ul>
+	<!-- <button id="btn">请求数据</button> -->
+    <!-- <ul id="show" style="min-height: 100px; min-width: 100px; background: pink"></ul> -->
+    <h1 class="title">服务已经开启</h1>
 </body>
 </html>
 <script>
-	$('#btn').on('click', function() {
+	// $('#btn').on('click', function() {
         //通过ajax提交请求
         $.ajax({
-            type: 'post',
-            url: '/api/searchMessages',
-            data: {total: 3},
+            type: 'get',
+            url: '/api/test',
             dataType: 'json',
             success: function(result) {
-                var $show = $('#show');
-                var list  = result['var'];
-                var HTML  = '';
-            	for (var i = 0, len = list.length; i < len; i++) {
-            		HTML += '<li>' + list[i].fid + '</li>' 
-            	}
-            	$show.html(HTML)
-            	console.log(list)
+            	console.log(result)
             }
         })
-    })
+    // })
 </script>
